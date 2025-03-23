@@ -15,7 +15,7 @@ jobs:
         with:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Construicao e Envio da Imagem Docker
+      - name: Construcao e Envio da Imagem Docker
         uses: docker/build-push-action@v6
         with:
           context: ./src
